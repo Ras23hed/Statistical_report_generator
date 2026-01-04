@@ -1,6 +1,7 @@
 Start
 Set scores = [2.9, 2.6, 3.2, 2.65, 2.75]
 Set Suitable_count = 0
+Set reject_count = 0
 Set tot_students = 0
 Set CGPA = 2.75
 
@@ -9,9 +10,10 @@ For each score in scores
 	If score >= CGPA
 		Then Suitable_count = Suitable_count +1
 	Else
-		Suitable_count = Suitable_count
+		reject_count = reject_count + 1
 	End if
 End for
 Print tot_students
 Print Suitable_count
+Print reject_count
 End
