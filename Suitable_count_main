@@ -1,0 +1,13 @@
+Start
+Set scores = [2.9, 2.6, 3.2, 2.65, 2.75]
+Set Suitable_count = 0
+Set CGPA = 2.75
+For each score in scores
+	If score >= CGPA
+		Then Suitable_count = Suitable_count +1
+	Else
+		Suitable_count = Suitable_count
+	End if
+End for
+Print Suitable_count
+End
